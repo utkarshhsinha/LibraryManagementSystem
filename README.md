@@ -8,7 +8,7 @@ The **Library Management System** is a web-based application that allows users t
 
 - **Frontend:** JSP, HTML, CSS, Bootstrap
 - **Backend:** Java Servlets, JDBC
-- **Database:** MySQL
+- **Database:** PostgreSQL
 - **Build Tool:** Maven
 - **Server:** Apache Tomcat
 
