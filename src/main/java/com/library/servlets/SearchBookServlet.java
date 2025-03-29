@@ -12,19 +12,20 @@ import java.util.List;
 
 @WebServlet("/searchBook")
 public class SearchBookServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String query = request.getParameter("query");
-        
-        // Fetch books from DB
-        List<Book> books = BookDAO.searchBook(query);
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String query = request.getParameter("query");
 
-        // Debugging log
-        System.out.println("🔍 Search Query: " + query + " | Books Found: " + books.size());
+		// Fetch books from DB
+		List<Book> books = BookDAO.searchBook(query);
 
-        // Set books as request attribute
-        request.setAttribute("books", books);
+		// Debugging log
+		System.out.println("🔍 Search Query: " + query + " | Books Found: " + books.size());
 
-        // Forward request back to search.jsp
-        request.getRequestDispatcher("search.jsp").forward(request, response);
-    }
+		// Set books as request attribute
+		request.setAttribute("books", books);
+
+		// Forward request back to search.jsp
+		request.getRequestDispatcher("search.jsp").forward(request, response);
+	}
 }

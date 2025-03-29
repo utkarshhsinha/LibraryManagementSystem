@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Search Book</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20230801/ourmid/pngtree-library-icon-with-a-window-and-books-vector-png-image_6821977.png">
 </head>
 <body class="container mt-5">
 
@@ -15,7 +16,7 @@
     <!-- ✅ Corrected form action to use searchBook servlet -->
     <form action="searchBook" method="get" class="card p-4">
         <div class="mb-3">
-            <label class="form-label">Enter Book Title:</label>
+            <label class="form-label">Enter Book Title or Id:</label>
             <input type="text" name="query" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-info w-100">🔍 Search</button>

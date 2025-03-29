@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Add a Book</title>
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20230801/ourmid/pngtree-library-icon-with-a-window-and-books-vector-png-image_6821977.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
